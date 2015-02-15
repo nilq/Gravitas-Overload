@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BoostScript.cs" />
+     <Compile Include="Assets\Scripts\BoostScript.cs" />
      <Compile Include="Assets\Scripts\CosSinDemo.cs" />
      <Compile Include="Assets\Scripts\Developer Tools\CT_Aligner.cs" />
      <Compile Include="Assets\Scripts\Developer Tools\CT_Aligner_Assigner.cs" />
