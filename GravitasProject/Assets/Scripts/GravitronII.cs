@@ -9,6 +9,7 @@ public class GravitronII : MonoBehaviour {
 	public bool calculateOnlyOnce;
 	public GameObject objectPointingTheRightWay;
 	public float gravitationalPower = 1f;
+	public float gravPowAnimationmodifier = 0.2f;
 
 	// Update is called once per frame
 	void Update () {
@@ -19,7 +20,7 @@ public class GravitronII : MonoBehaviour {
 				 Mathf.Sin (Mathf.Deg2Rad * gravAngle + 0) * gravitationalPower);
 
 			if(objectPointingTheRightWay.GetComponentInChildren<ParticleSystem>())
-				objectPointingTheRightWay.GetComponentInChildren<ParticleSystem>().startSpeed = gravitationalPower * 0.2f;
+				objectPointingTheRightWay.GetComponentInChildren<ParticleSystem>().startSpeed = gravitationalPower * gravPowAnimationmodifier;
 
 			if (calculateOnlyOnce) 
 				calculateForceVector = false;
