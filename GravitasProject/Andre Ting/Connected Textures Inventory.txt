@@ -1,0 +1,52 @@
+1111 0000
+1110 0000
+1100 0000
+1101 0000
+1010 0001
+1001 0010
+0010 0001
+1000 0011
+0000 1011
+0000 1110
+0000 0101
+0000 0011
+1011 0000
+1010 0000
+1000 0000
+1001 0000
+0110 0100
+0101 1000
+0100 1100
+0001 1010
+0000 0111
+0000 1101
+0000 1100
+0000 1010
+0011 0000
+0010 0000
+0000 0000
+0001 0000
+0010 0000
+1000 0001
+0010 0001
+1000 0010
+0000 0001
+0000 0010
+0000 1001
+0000 0110
+0111 0000
+0110 0000
+0100 0000
+0101 0000
+0100 1000
+0001 0010
+0100 0100
+0001 1000
+0000 0100
+0000 1000
+0000 1111
+NOT USED
+Ovenstående er et inventar over hvilke kanter(edges) og hjørner(nooks) som CT-blokkene indeholder.
+Hver linje repræsenterer en blok; Placeret som i CTM templaten og læst fra venstre mod højre(som numereret på billedet, men hvor der startes fra 1 og ikke 0).
+Den første række binære tal ræpræsenterer kanterne, 0 hvis der ingen kant er og 1 hvis der er en kant. Blokkene læses "op, ned, venstre, højre". Således har blok 3 den øverste og nederste kant og heder derfor 1100.
+Den anden række binære tal ræpræsenterer hjørnerne, 0 hvis der intet hjørne er og 1 hvis der er et hjørne. Der hvor der er kanter i stedet for hjørner står der 0. Blokkene læses fra venstre mod højre. Således har blok 9 nederste venstre- og højre hjørne og hedder derfor 0011.

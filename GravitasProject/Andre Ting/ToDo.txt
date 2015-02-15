@@ -1,0 +1,6 @@
+[X] Fungerende radio	//Den mest blærede løsning blev anvendt.
+[*] Grafik til gravitroner	//De skal måske ligge i et gitter og være lige store
+[*] Godt test-level
+[*] Fjender
+[*] Main menu // Skal i første omgang indeholde [START]-knap og intet andet.
+[*] Pil som viser tyngdekraftens retning på spilleren
