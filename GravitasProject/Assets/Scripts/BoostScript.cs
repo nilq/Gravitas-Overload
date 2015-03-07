@@ -18,13 +18,13 @@ public class BoostScript : MonoBehaviour {
 		if (Input.GetButtonDown("Fire1") ) 
 		{
 			Vector2 position = new Vector2 (transform.position.x, transform.position.y);
-			Vector3 mousePosition =  cameraObject.camera.ScreenToWorldPoint(Input.mousePosition);
+			Vector3 mousePosition =  cameraObject.GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition);
 			Vector2 direction = new Vector2 (mousePosition.x, mousePosition.y) - position;
 
 			RaycastHit2D rayHit = Physics2D.Raycast(position, direction, boostRange, compatibleLayer);
 
 			if (rayHit) {
-				rigidbody2D.AddForce(Vector2.ClampMagnitude(direction, 1) * -boostPower);
+				GetComponent<Rigidbody2D>().AddForce(Vector2.ClampMagnitude(direction, 1) * -boostPower);
 				//Debug.Log ("Boost recieved of size " + (Vector2.ClampMagnitude(direction, 1) * boostPower).magnitude.ToString() + " and value " + (Vector2.ClampMagnitude(direction, 1) * boostPower).ToString());
 			}
 

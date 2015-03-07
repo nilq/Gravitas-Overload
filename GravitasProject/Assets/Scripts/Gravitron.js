@@ -19,8 +19,8 @@ function Update () {
 function OnTriggerStay2D(other : Collider2D) {
 	
 	
-	if(other.rigidbody2D) {
+	if(other.GetComponent.<Rigidbody2D>()) {
 	
-		other.rigidbody2D.AddForce(uniVec);
+		other.GetComponent.<Rigidbody2D>().AddForce(uniVec);
 	}
 }

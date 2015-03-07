@@ -13,7 +13,7 @@ function Update () {
 	var movX = Input.GetAxis("Horizontal");
 	var movY = Input.GetAxis("Vertical");
 	
-	rigidbody2D.AddForce(new Vector2(movX * accX, movY * accY));
+	GetComponent.<Rigidbody2D>().AddForce(new Vector2(movX * accX, movY * accY));
 	
 	if (Input.GetKeyDown("space")) {
 		//rigidbody2D.AddForce(Vector2.MoveTowards());
