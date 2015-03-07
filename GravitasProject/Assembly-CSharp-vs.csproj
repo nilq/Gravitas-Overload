@@ -51,11 +51,13 @@
      <Compile Include="Assets\Scripts\Developer Tools\CT_Aligner.cs" />
      <Compile Include="Assets\Scripts\Developer Tools\CT_Aligner_Assigner.cs" />
      <Compile Include="Assets\Scripts\GravitronII.cs" />
+     <Compile Include="Assets\Scripts\MakeLevel.cs" />
      <Compile Include="Assets\Scripts\Menus\BulletScript.cs" />
      <Compile Include="Assets\Scripts\Menus\BulletScript[Konflikt].cs" />
      <Compile Include="Assets\Scripts\Menus\DeatScreenScript.cs" />
      <Compile Include="Assets\Scripts\Menus\EnemyScript.cs" />
      <Compile Include="Assets\Scripts\RadioScript.cs" />
+     <Compile Include="Assets\Scripts\SplashAnimation.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
