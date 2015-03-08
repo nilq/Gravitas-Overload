@@ -1,8 +1,9 @@
 fileFormatVersion: 2
-guid: cfcd3ca7e5dc0b148b004947e3b8c77b
+guid: 1b826bf9f932043498f8f93c5d7ce53c
+timeCreated: 1425808214
+licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Enemy
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,11 +26,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
-  maxTextureSize: 1024
+  textureFormat: -1
+  maxTextureSize: 2048
   textureSettings:
-    filterMode: 2
-    aniso: 1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -45,11 +46,7 @@ TextureImporter:
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings:
-  - buildTarget: iPhone
-    maxTextureSize: 1024
-    textureFormat: -2
-    compressionQuality: 50
+  buildTargetSettings: []
   spriteSheet:
     sprites: []
   spritePackingTag: 

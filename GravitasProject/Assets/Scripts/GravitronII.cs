@@ -28,7 +28,6 @@ public class GravitronII : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D collision){
-		Debug.Log (collision);
 			if (collision.GetComponent<Rigidbody2D>()) {
 			collision.GetComponent<Rigidbody2D>().AddForce(forceVector);
 				}
