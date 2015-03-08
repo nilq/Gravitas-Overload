@@ -22668,6 +22668,14 @@ Prefab:
       propertyPath: checkpointMarker
       value: 
       objectReference: {fileID: 778661295}
+    - target: {fileID: 11400000, guid: 7571828ba06accd4f969583bf7efeb50, type: 2}
+      propertyPath: boostRange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7571828ba06accd4f969583bf7efeb50, type: 2}
+      propertyPath: boostPower
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7571828ba06accd4f969583bf7efeb50, type: 2}
   m_IsPrefabParent: 0
