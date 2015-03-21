@@ -5,6 +5,9 @@ public class BoostScript : MonoBehaviour {
 
 	public float boostRange = 3;
 	public float boostPower = 100;
+	public float boostCooldown = 0f;
+	float timeOfLastBoost;
+
 	public Component cameraObject;
 	public LayerMask compatibleLayer;
 
@@ -17,6 +20,7 @@ public class BoostScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Debug.Log ("Look what i found! " + rigidbody2D.ToString ());
+		timeOfLastBoost = Time.time;
 
 		try{
 			traceLine = (LineRenderer) gameObject.GetComponent("LineRenderer");
@@ -27,8 +31,10 @@ public class BoostScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("Fire1") ) 
+		if (Input.GetButtonDown("Fire1") && timeOfLastBoost + boostCooldown < Time.time) 
 		{
+			timeOfLastBoost = Time.time;
+
 			Vector2 currentPosition = new Vector2 (transform.position.x, transform.position.y);
 			Vector3 mousePosition =  cameraObject.GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition);
 			Vector2 direction = new Vector2 (mousePosition.x, mousePosition.y) - currentPosition;
@@ -53,6 +59,8 @@ public class BoostScript : MonoBehaviour {
 
 
 	IEnumerator DrawBoostTrace(Vector2 origin, Vector2 destination, Color lineColour){
+		if (!traceLine) yield break;
+
 		Color lineColourStart = new Color(lineColour.r, lineColour.g, lineColour.b, 0);
 		Color lineColourEnd = lineColour;
 		traceLine.SetColors(lineColourStart, lineColourEnd);
@@ -60,6 +68,13 @@ public class BoostScript : MonoBehaviour {
 		traceLine.SetPosition(0, origin);
 		traceLine.SetPosition(1, destination);
 
+		/*for (int i = 100; i>0; i--){  //Code decomisioned because coroutines are wonky.
+			lineColourEnd =  new Color(lineColour.r, lineColour.g, lineColour.b, (i*0.01f));
+			Debug.Log (lineColourEnd.ToString());
+			traceLine.SetColors(lineColourStart, lineColourEnd);
+
+			yield return new WaitForSeconds(animationDelay/100);
+		}*/
 		yield return new WaitForSeconds (animationDelay);
 
 		traceLine.SetVertexCount(0);
