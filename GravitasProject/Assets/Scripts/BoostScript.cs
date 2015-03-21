@@ -11,6 +11,7 @@ public class BoostScript : MonoBehaviour {
 	public Component cameraObject;
 	public LayerMask compatibleLayer;
 
+	[Tooltip("The time it takes before the traceline disappears")]
 	public float animationDelay = 0.1f;
 	public Color lineColourHit = Color.magenta;
 	public Color lineColourMiss = Color.magenta;
