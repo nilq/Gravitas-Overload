@@ -14,7 +14,9 @@ public class GlideAround : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-	
+		if(coordinateCycle.Count == 0){
+			coordinateCycle.Add(new Vector2 (transform.position.x,transform.position.y));
+		}
 	}
 	
 	// Update is called once per frame

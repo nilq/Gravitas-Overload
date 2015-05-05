@@ -75,6 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boostRange: .5
   boostPower: 125
+  boostCooldown: 0
   cameraObject: {fileID: 0}
   compatibleLayer:
     serializedVersion: 2
