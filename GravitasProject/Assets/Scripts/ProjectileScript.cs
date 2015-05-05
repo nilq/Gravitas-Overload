@@ -29,7 +29,6 @@ public class ProjectileScript : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		Debug.Log ("I hit something!");
 		if (destroyOnCollision && other.isTrigger == false) {
 			Destroy (gameObject, Time.fixedDeltaTime);
 		}
