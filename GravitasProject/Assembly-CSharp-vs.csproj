@@ -46,22 +46,28 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BoostScript.cs" />
      <Compile Include="Assets\Scripts\CosSinDemo.cs" />
-     <Compile Include="Assets\Scripts\Developer Tools\CT_Aligner.cs" />
-     <Compile Include="Assets\Scripts\Developer Tools\CT_Aligner_Assigner.cs" />
+     <Compile Include="Assets\Scripts\Developer Tools\AddCoordinatesToGlideAround.cs" />
      <Compile Include="Assets\Scripts\Developer Tools\Level.cs" />
      <Compile Include="Assets\Scripts\Developer Tools\ReadLevel.cs" />
      <Compile Include="Assets\Scripts\Developer Tools\ReadLevelPro.cs" />
+     <Compile Include="Assets\Scripts\DivineBit.cs" />
+     <Compile Include="Assets\Scripts\FireProjectiles.cs" />
      <Compile Include="Assets\Scripts\GlideAround.cs" />
      <Compile Include="Assets\Scripts\GoalScript.cs" />
-     <Compile Include="Assets\Scripts\GravitronII.cs" />
+     <Compile Include="Assets\Scripts\Gravitron\AutoDestroy.cs" />
+     <Compile Include="Assets\Scripts\Gravitron\Gravitron.cs" />
+     <Compile Include="Assets\Scripts\Gravitron\GravitronAnimationModifier.cs" />
+     <Compile Include="Assets\Scripts\Gravitron\Gravitronable.cs" />
      <Compile Include="Assets\Scripts\MakeLevel.cs" />
      <Compile Include="Assets\Scripts\Menus\BulletScript.cs" />
      <Compile Include="Assets\Scripts\Menus\BulletScript[Konflikt].cs" />
      <Compile Include="Assets\Scripts\Menus\DeatScreenScript.cs" />
      <Compile Include="Assets\Scripts\Menus\EnemyScript.cs" />
+     <Compile Include="Assets\Scripts\Player Movement\BoostScript.cs" />
+     <Compile Include="Assets\Scripts\Player Movement\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\PointClickPlacementTool.cs" />
+     <Compile Include="Assets\Scripts\ProjectileScript.cs" />
      <Compile Include="Assets\Scripts\RadioScript.cs" />
      <Compile Include="Assets\Scripts\SplashAnimation.cs" />
      <Compile Include="Assets\Scripts\TriggerScript.cs" />

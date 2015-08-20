@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 482058}
   - 212: {fileID: 21239882}
   - 61: {fileID: 6184810}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hurtblock
   m_TagString: Hurtful
   m_Icon: {fileID: 0}
@@ -26,8 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 409546}
   - 212: {fileID: 21245306}
-  - 61: {fileID: 6189928}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenSpiral_Frame
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -53,7 +52,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: -5, z: 0}
+  m_LocalPosition: {x: 1, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 409546}
@@ -72,19 +71,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
---- !u!61 &6189928
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188606}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: .899999976, y: .899999976}
 --- !u!212 &21239882
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -109,8 +95,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 30dbab67733e0854cbd9b285110a937e, type: 3}
-  m_Color: {r: .655172348, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b7a9c7aecab05b5458bba592d791f9ff, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21245306
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -135,8 +121,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1185410521
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b1c4001450f20fa4f83d592186f05f92, type: 3}
-  m_Color: {r: 1, g: 0, b: .724137783, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4ff535f553a5aae4882aad00ba3112ff, type: 3}
+  m_Color: {r: .551470578, g: .0114096794, b: 0, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

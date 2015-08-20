@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 430022}
   - 212: {fileID: 21281084}
   - 60: {fileID: 6043192}
+  - 114: {fileID: 11450848}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Hurtful
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.12400007, y: -1.04999995, z: 0}
+  m_LocalPosition: {x: -1, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -46,6 +47,19 @@ PolygonCollider2D:
       - {x: -.142545104, y: -.000207304955}
       - {x: -.00382113457, y: -.138585091}
       - {x: .137122154, y: .00278139114}
+--- !u!114 &11450848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c27eb9f3990a4da6933a1314783bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glideSpeed: .75
+  coordinateCycle: []
 --- !u!212 &21281084
 SpriteRenderer:
   m_ObjectHideFlags: 1
