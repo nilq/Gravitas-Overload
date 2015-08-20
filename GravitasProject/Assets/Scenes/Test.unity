@@ -1356,6 +1356,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11464082, guid: 661f3f62003a28848a1ab9a642c52b4d, type: 2}
+      propertyPath: checkpointMarker
+      value: 
+      objectReference: {fileID: 1851635380}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 661f3f62003a28848a1ab9a642c52b4d, type: 2}
   m_IsPrefabParent: 0
@@ -11337,6 +11341,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92c4f27fb7b5cb54fa98fd53be95ebf1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1851635380 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 169772, guid: 81f69f92df9693f4fadfc83e135042d3, type: 2}
+  m_PrefabInternal: {fileID: 322939571}
 --- !u!4 &1852665824 stripped
 Transform:
   m_PrefabParentObject: {fileID: 492526, guid: cc99269eab8ef2d4fb8308e15d930651, type: 2}

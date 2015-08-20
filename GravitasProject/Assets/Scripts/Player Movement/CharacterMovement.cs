@@ -58,7 +58,7 @@ public class CharacterMovement : MonoBehaviour
 
 
 		//Dash
-		if (Input.GetButtonDown ("Fire2")) {
+		if (Input.GetButtonDown ("Fire2") && !Input.GetButton ("Fire3")) {
 			if (lastDash <= Time.time - cooldown) {	  //If it has been longer than Cooldown since last dash
 				rbody.AddForce (input * dashForce);	  //Dash in the direction you were moving
 				lastDash = Time.time;   //Reset the counter
