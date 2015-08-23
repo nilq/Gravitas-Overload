@@ -54,11 +54,15 @@ public class CharacterMovement : MonoBehaviour
 		//Movement
 		Vector2 input = new Vector2 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"));
 
+		if (Input.GetButton ("Fire3")) {  //Deny movement when breaking
+			input = Vector2.zero;
+		}
+
 		rbody.AddForce (input * acceleration);	//Apply Force
 
 
 		//Dash
-		if (Input.GetButtonDown ("Fire2") && !Input.GetButton ("Fire3")) {
+		if (Input.GetButtonDown ("Fire2") && !Input.GetButton ("Fire3")) { //Deny dash when breaking
 			if (lastDash <= Time.time - cooldown) {	  //If it has been longer than Cooldown since last dash
 				rbody.AddForce (input * dashForce);	  //Dash in the direction you were moving
 				lastDash = Time.time;   //Reset the counter
