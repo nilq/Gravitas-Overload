@@ -4,19 +4,17 @@ Gravitas Overload - Game
 ---
 
 License:
-If you somehow mannage to make more than $5000 from this project, we would like a 5% cut of those profits, please.
+If you somehow mannage to make more than $5000 from this project, we would like a 5% cut of those profits, please. We reserve the right to change this at any time.
 
 
 
 Todo:
 Scripting:
-* Add development-tool: image to level converter.
-* Overhaul Gravitron-script: Choose from 8 directions, automatically assign graphics from direction, only one gravitron may act upon the player at the time.
-* Script for Gravitrons assigning animation in the right direction
-* An animation-script allowing one to choose time between frames
-* Have a look at that boost-script; 'Qulu was right: There is no reason for it to need a surface to push off of
-* Make the portal-script a more smooth transition
-* A minimap
+* Animations for player movement
+* Bits that the player must collect
+* Portal that opens when bits are collected
+* Additional bits that might provide some story but no ingame effect
+* A message that opens and displays the content of the bit which was picked up
 
 Audio:
 * When you die
@@ -31,6 +29,4 @@ Levels: We'll see what works best
 * One open-ended with each room an obstacle-course
  
 Textures
-* Still need those gravitrons!
-* A proper earth-block (Make it in grayscale to allow recolouring in the editor, please)
-* A background that looks better
+* Try and see what happens if we go from 64x blocks to 32x blocks.
